@@ -1,16 +1,116 @@
 # Create a list of level 1 questions and answers
-questions = [
-    ("What is the capital of France?", "Paris"),
-    ("What is the largest ocean in the world?", "Pacific Ocean"),
-    ("What is the tallest mountain in the world?", "Mount Everest"),
-    ("What is the chemical formula for water?", "H2O"),
-    ("What is the square root of 16?", "4"),
+currentRavens = [
+    ("What jersey number does Lamar Jackson wear? ", "8"),
+    ("What position does Lamar Jackson play? ", "QB"),
+    ("Who is the head coach for the Baltimore Ravens? ", "John Harbough"),
+    (
+        "What is the primary color of the Baltimore Ravens? (other than black) ",
+        "Purple",
+    ),
+    ("How many wins did the 2023 Baltimore Ravens have? ", "13"),
 ]
 
-# Initialize the score
-score = 0
+recentRavens = [
+    ("What number did Terrell Suggs wear? ", "55"),
+    ("What year did the Baltimore Ravens win their last Super Bowl? ", "2013"),
+    ("Who was the quarterback for the 2012-2013 Baltimore Ravens? ", "Joe Flacco"),
+    (
+        "How many touchdowns did Joe Flacco throw in the 2013 playoffs en route to Super Bowl? ",
+        "11",
+    ),
+    ("Who did the Baltimore Ravens win the 2013 Super Bowl agaisnt? ", "49ers"),
+]
+legendRavens = [
+    ("What number did Ray Lewis wear? ", "52"),
+    ("What year was Ray Lewis drafted? ", "1999"),
+    (
+        "Who was the genral manager for Baltimore Ravens for the 1999 NFL Draft? ",
+        "Ozzie Newsome",
+    ),
+    (
+        "Who has the longest interception return in Baltimore Ravens history? ",
+        "Ed Reed",
+    ),
+    ("Who did the Baltimore Ravens win the 2000 Super Bowl agaisnt? ", "Giants"),
+]
 
-# Ask each question
-for question, answer in questions:
-    # Print the question
-    print(question)
+
+# Start the game
+def main():
+    result1 = askCurrent(currentRavens)
+    if result1 >= 60:
+        result2 = askRecent(recentRavens)
+    else:
+        print("Please study the current Baltimore Ravens")
+        return
+    if result2 >= 60:
+        result3 = askLegend(legendRavens)
+    else:
+        print("Please study the 2013 Baltimore Ravens")
+        return
+    if result3 >= 60:
+        print("You are a true Baltimore Ravens fan")
+    else:
+        print("Please study the 2000 Baltimore Ravens")
+        return
+
+
+def askCurrent(questions):
+    score = 0
+    # Ask each question
+    for question, answer in questions:
+        # Allow user input
+        x = input(question).casefold()
+        # Check users input
+        if x == str(answer).casefold():
+            score += 1
+        else:
+            print("incorrect! The answer is", answer)
+    result = score / len(questions) * 100
+    if result >= 60:
+        print("You have completed level 1")
+    else:
+        print("You are not a Baltimore Ravens fan")
+    return result
+
+
+def askRecent(questions):
+    score = 0
+    # Ask each question
+    for question, answer in questions:
+        # Allow user input
+        x = input(question).casefold()
+        # Check users input
+        if x == str(answer).casefold():
+            score += 1
+        else:
+            print("incorrect! The answer is", answer)
+    result = score / len(questions) * 100
+    if result >= 60:
+        print("You have completed level 2")
+    else:
+        print("You are a level 1 fan")
+    return result
+
+
+def askLegend(questions):
+    score = 0
+    # Ask each question
+    for question, answer in questions:
+        # Allow user input
+        x = input(question).casefold()
+        # Check users input
+        if x == str(answer).casefold():
+            score += 1
+        else:
+            print("incorrect! The answer is", answer)
+    result = score / len(questions) * 100
+    if result >= 60:
+        print("You have completed level 3")
+    else:
+        print("You are a level 2 fan")
+    return result
+
+
+if __name__ == "__main__":
+    main()
