@@ -9,6 +9,7 @@ currentRavens = [
     ),
     ("How many wins did the 2023 Baltimore Ravens have? ", "13"),
 ]
+
 # Create level 2 questions and answers
 recentRavens = [
     ("What number did Terrell Suggs wear? ", "55"),
@@ -20,6 +21,7 @@ recentRavens = [
     ),
     ("Who did the Baltimore Ravens win the 2013 Super Bowl agaisnt? ", "49ers"),
 ]
+
 # Create level 3 questions and answers
 legendRavens = [
     ("What number did Ray Lewis wear? ", "52"),
@@ -56,6 +58,7 @@ def main():
         return
 
 
+# Ask questions for level 1
 def askCurrent(questions):
     score = 0
     # Ask each question
@@ -75,6 +78,7 @@ def askCurrent(questions):
     return result
 
 
+# Ask questions for level 2
 def askRecent(questions):
     score = 0
     # Ask each question
@@ -94,6 +98,7 @@ def askRecent(questions):
     return result
 
 
+# Ask questions for level 3
 def askLegend(questions):
     score = 0
     # Ask each question
