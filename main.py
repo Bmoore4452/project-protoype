@@ -1,4 +1,4 @@
-# Create a list of level 1 questions and answers
+# Create level 1 questions and answers
 currentRavens = [
     ("What jersey number does Lamar Jackson wear? ", "8"),
     ("What position does Lamar Jackson play? ", "QB"),
@@ -9,7 +9,7 @@ currentRavens = [
     ),
     ("How many wins did the 2023 Baltimore Ravens have? ", "13"),
 ]
-
+# Create level 2 questions and answers
 recentRavens = [
     ("What number did Terrell Suggs wear? ", "55"),
     ("What year did the Baltimore Ravens win their last Super Bowl? ", "2013"),
@@ -20,6 +20,7 @@ recentRavens = [
     ),
     ("Who did the Baltimore Ravens win the 2013 Super Bowl agaisnt? ", "49ers"),
 ]
+# Create level 3 questions and answers
 legendRavens = [
     ("What number did Ray Lewis wear? ", "52"),
     ("What year was Ray Lewis drafted? ", "1999"),
