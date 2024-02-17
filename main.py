@@ -162,7 +162,9 @@ def askCurrent(questions):
 
                 # Prompt user input
                 while True:
-                    choice = input("Pick: ").casefold()
+                    choice = input(
+                        "\nPlease enter your type your answer(a, b, c, or d) and press return: "
+                    ).casefold()
 
                     # Check for a valid choice
                     if choice in choices:
@@ -230,7 +232,9 @@ def askRecent(questions):
 
                 # Prompt user input
                 while True:
-                    choice = input("Pick: ").casefold()
+                    choice = input(
+                        "\nPlease enter your type your answer(a, b, c, or d) and press return: "
+                    ).casefold()
 
                     # Check for a valid choice
                     if choice in choices:
@@ -298,7 +302,9 @@ def askLegend(questions):
 
                 # Prompt user input
                 while True:
-                    choice = input("Pick: ").casefold()
+                    choice = input(
+                        "\nPlease enter your type your answer(a, b, c, or d) and press return: "
+                    ).casefold()
 
                     # Check for a valid choice
                     if choice in choices:
