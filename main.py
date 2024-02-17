@@ -61,14 +61,6 @@ recentRavens = [
         ],
         "correct": "San Franciso 49ers",
     },
-    # ("What number did Terrell Suggs wear? ", "55"),
-    # ("What year did the Baltimore Ravens win their last Super Bowl? ", "2013"),
-    # ("Who was the quarterback for the 2012-2013 Baltimore Ravens? ", "Joe Flacco"),
-    # (
-    #     "How many touchdowns did Joe Flacco throw in the 2013 playoffs en route to Super Bowl? ",
-    #     "11",
-    # ),
-    # ("Who did the Baltimore Ravens win the 2013 Super Bowl agaisnt? ", "49ers"),
 ]
 
 # Create level 3 questions and answers
@@ -103,17 +95,6 @@ legendRavens = [
         ],
         "correct": "New York Giants",
     },
-    # ("What number did Ray Lewis wear? ", "52"),
-    # ("What year was Ray Lewis drafted? ", "1999"),
-    # (
-    #     "Who was the genral manager for Baltimore Ravens for the 1999 NFL Draft? ",
-    #     "Ozzie Newsome",
-    # ),
-    # (
-    #     "Who has the longest interception return in Baltimore Ravens history? ",
-    #     "Ed Reed",
-    # ),
-    # ("Who did the Baltimore Ravens win the 2000 Super Bowl agaisnt? ", "Giants"),
 ]
 
 
