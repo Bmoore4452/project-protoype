@@ -1,7 +1,7 @@
 import random
 
 # Create level 1 questions and answers
-currentRavens = [
+current_ravens = [
     {
         "question": "What jersey number does Lamar Jackson wear? ",
         "answers": ["8", "5", "1", "15"],
@@ -30,7 +30,7 @@ currentRavens = [
 ]
 
 # Create level 2 questions and answers
-recentRavens = [
+recent_ravens = [
     {
         "question": "What number did Terrell Suggs wear? ",
         "answers": ["65", "55", "51", "58"],
@@ -64,7 +64,7 @@ recentRavens = [
 ]
 
 # Create level 3 questions and answers
-legendRavens = [
+legend_ravens = [
     {
         "question": "What number did Ray Lewis wear? ",
         "answers": ["48", "52", "51", "58"],
@@ -100,14 +100,14 @@ legendRavens = [
 
 # Start the game
 def main():
-    result1 = askCurrent(currentRavens)
+    result1 = askCurrent(current_ravens)
     if result1 >= 60:
-        result2 = askRecent(recentRavens)
+        result2 = askRecent(recent_ravens)
     else:
         print("Please study the current Baltimore Ravens")
         return
     if result2 >= 60:
-        result3 = askLegend(legendRavens)
+        result3 = askLegend(legend_ravens)
     else:
         print("Please study the 2013 Baltimore Ravens")
         return
