@@ -141,8 +141,8 @@ def askCurrent(questions):
 
             # Identify answer options
             if y == "answers":
-                a = x[y]
-                random.shuffle(a)
+                answers = x[y]
+                random.shuffle(answers)
 
             # Identify correct answer
             if y == "correct":
@@ -152,7 +152,7 @@ def askCurrent(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                input_options = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: answers[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
                 print(f"A. {input_options['a']}")
@@ -211,8 +211,8 @@ def askRecent(questions):
 
             # Identify answer options
             if y == "answers":
-                a = x[y]
-                random.shuffle(a)
+                answers = x[y]
+                random.shuffle(answers)
 
             # Identify correct answer
             if y == "correct":
@@ -222,7 +222,7 @@ def askRecent(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                input_options = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: answers[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
                 print(f"A. {input_options['a']}")
@@ -281,8 +281,8 @@ def askLegend(questions):
 
             # Identify answer options
             if y == "answers":
-                a = x[y]
-                random.shuffle(a)
+                answers = x[y]
+                random.shuffle(answers)
 
             # Identify correct answer
             if y == "correct":
@@ -292,7 +292,7 @@ def askLegend(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                input_options = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: answers[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
                 print(f"A. {input_options['a']}")
