@@ -152,13 +152,13 @@ def askCurrent(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                res = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: a[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
-                print(f"A. {res['a']}")
-                print(f"B. {res['b']}")
-                print(f"C. {res['c']}")
-                print(f"D. {res['d']}")
+                print(f"A. {input_options['a']}")
+                print(f"B. {input_options['b']}")
+                print(f"C. {input_options['c']}")
+                print(f"D. {input_options['d']}")
 
                 # Prompt user input
                 while True:
@@ -170,7 +170,7 @@ def askCurrent(questions):
                     if choice in choices:
 
                         # Check for correct input
-                        if res[choice] == correct["correct"]:
+                        if input_options[choice] == correct["correct"]:
                             score += 1
                             break
                         else:
@@ -222,13 +222,13 @@ def askRecent(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                res = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: a[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
-                print(f"A. {res['a']}")
-                print(f"B. {res['b']}")
-                print(f"C. {res['c']}")
-                print(f"D. {res['d']}")
+                print(f"A. {input_options['a']}")
+                print(f"B. {input_options['b']}")
+                print(f"C. {input_options['c']}")
+                print(f"D. {input_options['d']}")
 
                 # Prompt user input
                 while True:
@@ -240,7 +240,7 @@ def askRecent(questions):
                     if choice in choices:
 
                         # Check for correct input
-                        if res[choice] == correct["correct"]:
+                        if input_options[choice] == correct["correct"]:
                             score += 1
                             break
                         else:
@@ -292,13 +292,13 @@ def askLegend(questions):
                 print(question)
 
                 # Converts input options and answer options into a dictionary
-                res = {choices[i]: a[i] for i in range(len(choices))}
+                input_options = {choices[i]: a[i] for i in range(len(choices))}
 
                 # Prints each options for user to choose from
-                print(f"A. {res['a']}")
-                print(f"B. {res['b']}")
-                print(f"C. {res['c']}")
-                print(f"D. {res['d']}")
+                print(f"A. {input_options['a']}")
+                print(f"B. {input_options['b']}")
+                print(f"C. {input_options['c']}")
+                print(f"D. {input_options['d']}")
 
                 # Prompt user input
                 while True:
@@ -310,7 +310,7 @@ def askLegend(questions):
                     if choice in choices:
 
                         # Check for correct input
-                        if res[choice] == correct["correct"]:
+                        if input_options[choice] == correct["correct"]:
                             score += 1
                             break
                         else:
