@@ -125,7 +125,7 @@ def askCurrent(questions):
     # Define multiple choice input options
     choices = ["a", "b", "c", "d"]
 
-    # Shuffle questions and answers so not test is ever the same
+    # Shuffle questions and answers so no test is ever the same
     random.shuffle(questions)
     random.shuffle(choices)
 
@@ -195,7 +195,7 @@ def askRecent(questions):
     # Define multiple choice input options
     choices = ["a", "b", "c", "d"]
 
-    # Shuffle questions and answers so not test is ever the same
+    # Shuffle questions and answers so no test is ever the same
     random.shuffle(questions)
     random.shuffle(choices)
 
@@ -265,7 +265,7 @@ def askLegend(questions):
     # Define multiple choice input options
     choices = ["a", "b", "c", "d"]
 
-    # Shuffle questions and answers so not test is ever the same
+    # Shuffle questions and answers so no test is ever the same
     random.shuffle(questions)
     random.shuffle(choices)
 
